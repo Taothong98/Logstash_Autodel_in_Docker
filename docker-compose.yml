@@ -26,8 +26,6 @@ services:
     image: kibana:8.13.4
     container_name: kibana  
     restart: unless-stopped       
-    networks:
-      - elastic  
     ports:
       - 80:5601
     depends_on:
@@ -42,6 +40,4 @@ services:
       - xpack.monitoring.enabled=false
     ports:
       - "9200:9200"
-    networks:
-      - elastic
 
