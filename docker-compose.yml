@@ -32,7 +32,8 @@ services:
       - elasticsearch 
 
   elasticsearch:
-    image: rapidfort/elasticsearch:8.13.4
+    # image: rapidfort/elasticsearch:8.13.4
+    image: taothong/e-log:8.13.4
     restart: unless-stopped       
     environment:
       - discovery.type=single-node
